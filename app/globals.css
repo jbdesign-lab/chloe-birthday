@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
 :root {
+  --festive-pink: #f8b6d4;
+  --deep-pink: #e91e63;
+  --christmas-red: #dc2626;
+  --christmas-green: #16a34a;
+  --soft-green: #86efac;
+  --cream: #fef7cd;
+  --gold: #fbbf24;
+  --snow-white: #fefefe;
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -12,15 +21,126 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, var(--festive-pink), var(--cream));
+  min-height: 100vh;
+  color: var(--foreground);
+}
+
+.festive-text {
+  font-family: 'Dancing Script', cursive;
+}
+
+.christmas-card {
+  background: linear-gradient(145deg, rgba(254, 255, 255, 0.9), rgba(248, 182, 212, 0.2));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+}
+
+.gift-button {
+  background: linear-gradient(145deg, var(--christmas-red), var(--deep-pink));
+  border: none;
+  color: white;
+  padding: 18px 28px;
+  border-radius: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4);
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.gift-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(220, 38, 38, 0.6);
+}
+
+.activity-button {
+  background: linear-gradient(145deg, var(--christmas-green), var(--soft-green));
+  border: none;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(22, 163, 74, 0.4);
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.activity-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(22, 163, 74, 0.6);
+}
+
+@media (max-width: 768px) {
+  .gift-button {
+    padding: 20px 24px;
+    font-size: 16px;
+    min-height: 60px;
+  }
+  
+  .activity-button {
+    padding: 18px 20px;
+    font-size: 15px;
+    min-height: 56px;
+  }
+  
+  .christmas-card {
+    margin: 8px;
+    padding: 24px 20px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.snowflake {
+  position: absolute;
+  color: white;
+  font-size: 0.8rem;
+  animation: snowfall 10s linear infinite;
+  opacity: 0.6;
+}
+
+@media (min-width: 768px) {
+  .snowflake {
+    font-size: 1rem;
+    opacity: 0.8;
+  }
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.sparkle {
+  position: relative;
+  overflow: hidden;
+}
+
+.sparkle::before {
+  content: '✨';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  animation: sparkle 2s ease-in-out infinite alternate;
+}
+
+@keyframes sparkle {
+  0% { opacity: 0.5; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1.2); }
 }
