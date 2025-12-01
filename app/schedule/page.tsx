@@ -17,7 +17,7 @@ const scheduleItems = [
     time: '1:30 PM',
     emoji: '❄️',
     title: 'Winter Wonderland Adventure',
-    description: 'Magical winter activities, mini-challenges, and festive fun together!',
+    description: 'Exciting activities, mini-challenges, and festive fun together!',
     location: 'Winter Wonderland, London 🎪',
     status: 'booked',
     link: '/winter-wonderland'
@@ -51,7 +51,7 @@ export default function SchedulePage() {
                   🎉 <strong>Happy Birthday, Smelly!</strong>
                 </p>
                 <p className="text-pink-600 mt-1">
-                  I have planned your day with love and surprises at every turn! ✨
+                  Your day has been fully planned and filled with activities! ✨
                 </p>
               </div>
             </div>

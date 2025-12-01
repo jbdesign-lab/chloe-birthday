@@ -94,7 +94,7 @@ export default function GiftsPage() {
                   <p className="text-green-800 font-medium">
                     🎉 These mystery gifts are waiting for you to unwrap! 
                     The surprises inside will remain secret until you open them... 
-                    Now let's continue with your magical day! ✨
+                    Now let's continue with the rest of the schedule! ✨
                   </p>
                 </div>
               </div>
@@ -119,7 +119,7 @@ export default function GiftsPage() {
                 >
                   ✨ Continue to Your Day's Schedule
                 </FestiveButton>
-                
+
               </div>
             </ChristmasCard>
           </main>

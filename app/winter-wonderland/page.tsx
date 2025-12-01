@@ -7,26 +7,26 @@ import Snowfall from '../components/Snowfall';
 const activities = [
   {
     id: 1,
-    emoji: '🎠',
-    title: 'Ride Challenge',
-    description: 'Try the most thrilling ride',
-    reward: 'I buy the next ride of your choice! 🎢',
+    emoji: '🏪',
+    title: 'Christmas Markets',
+    description: 'Find the christmas market stalls',
+    reward: 'I buy the first item of your choice! 🎢',
     completed: false
   },
   {
     id: 2,
-    emoji: '🍭',
-    title: 'Sweet Tooth Quest',
-    description: 'Spot the most festive chocolate stall',
-    reward: 'Unlimited chocolate budget! 🍫',
+    emoji: '🧊',
+    title: 'Ice Kingdom',
+    description: 'Explore the ice kingdom attraction',
+    reward: 'You get to pick our next snack! 🍿',
     completed: false
   },
   {
     id: 3,
-    emoji: '📸',
-    title: 'Photo Mission',
-    description: 'Take a selfie with the biggest Christmas tree',
-    reward: 'You choose our next 2 photo spots! 📷',
+    emoji: '⛸️',
+    title: 'Face your Fears',
+    description: 'Try the ice skating rink',
+    reward: 'First drink on me (promise I won\'t laugh if you fall!) 🍹',
     completed: false
   },
   {
@@ -41,7 +41,7 @@ const activities = [
     id: 5,
     emoji: '☕',
     title: 'Hot Chocolate Hunt',
-    description: 'Find the coziest hot chocolate stand',
+    description: 'Find the best hot chocolate stand',
     reward: 'Hot chocolates are on me all day! ☕',
     completed: false
   },
@@ -49,23 +49,23 @@ const activities = [
     id: 6,
     emoji: '🎪',
     title: 'Adventure Choice',
-    description: 'Pick any attraction that catches your eye',
+    description: 'Pick any ride that catches your eye',
     reward: 'You decide our next 2 activities! ✨',
     completed: false
   },
   {
     id: 7,
-    emoji: '🎁',
-    title: 'Surprise Discovery',
-    description: 'Find something that makes you smile',
-    reward: 'Mini surprise gift unlocked! 🎀',
+    emoji: '🎭',
+    title: 'Circus Show',
+    description: 'Watch a festive circus performance',
+    reward: 'No reward, just because it will be fun anyway! 🎉',
     completed: false
   },
   {
     id: 8,
     emoji: '❄️',
-    title: 'Winter Wonder',
-    description: 'Experience the most "winter wonderland" moment',
+    title: 'Ice Sculpture Spotting',
+    description: 'Participate in an ice sculpture activity',
     reward: 'You choose how we end our time here! 🌟',
     completed: false
   }
