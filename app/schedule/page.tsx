@@ -141,7 +141,7 @@ export default function SchedulePage() {
               <div className="space-y-2 text-left text-sm text-yellow-700">
                 <p>• 🎁 Start with your gift selection whenever you're ready!</p>
                 <p>• ❄️ Winter Wonderland: Dress warm and comfy for outdoor activities</p>
-                <p>• 🍽️ ROKA Mayfair: Smart casual dress code (but you always look amazing!)</p>
+                <p>• 🍽️ Mystery dinner: Smart casual dress code</p>
               </div>
             </div>
 
